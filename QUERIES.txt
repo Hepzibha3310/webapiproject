@@ -1,0 +1,55 @@
+CREATE TABLE OutletUnit(
+
+
+        OutletID INT NOT NULL,
+        StreetName VARCHAR(25) NOT NULL,
+        Landmark  VARCHAR(25) NOT NULL,
+        NoOfAvailableFoodPacks INT ,
+        TypesOfFood VARCHAR(20),
+        Dates DATE NOT NULL,
+        PRIMARY KEY (OutletID)
+        
+);
+
+INSERT INTO TABLE OutletUnit (OutletID , Street Name , Landmark  )
+VALUES ( );
+
+
+
+CREATE TABLE VolunteerRegister(
+
+            VolunteerID INT NOT NULL,
+            VolunteerName VARCHAR(25) NOT NULL,
+            VolunteerAddress VARCHAR(25) NOT NULL,
+            VolunteerPhoneNumber INT NOT NULL,
+            VolunteerEmailid VARCHAR(20),
+            OutletID INT NOT NULL,
+            PRIMARY KEY(VolunteerID),
+            FOREIGN KEY(OutletID)
+);
+INSERT INTO TABLE OutletRegister (VolunteerID ,Name ,Address ,PhoneNumber, OutletID  )
+VALUES ( );
+
+
+
+CREATE TABLE OutletRequirement(
+
+            OutletID INT NOT NULL,
+            Noofvolunteersrequired INT NOT NULL,
+            AvailableDates DATE NOT NULL,
+            FOREIGN KEY(OutletID)
+      
+);
+INSERT INTO TABLE OutletRequirement (OutletID , Noofvolunteersrequired ,AvailableDates   )
+VALUES ( );
+
+
+
+
+SELECT * FROM OutletUnit ORDERBY Dates ASC;
+UPDATE  OutletRequirement  SET NoOfVolunteersRequired = 3;
+
+
+
+
+ 
