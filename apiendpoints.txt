@@ -1,0 +1,36 @@
+
+OutletUnit
+
+GET -outlet details
+# outletname
+# streetname
+# landmark
+# no of volunteers required
+# type of food available
+# no of food packets
+
+POST
+#volunteer no
+#no.of available food packets
+
+
+Volunteer
+
+POST- volunteer details
+# volunteername
+# volunteer address
+#phonenumber
+#email
+
+GET
+#volunteername
+#volunteerId
+
+
+Admin
+
+POST- Adminlogindetails
+#email
+
+
+
